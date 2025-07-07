@@ -3,7 +3,7 @@ set.seed(0)
 x <- floor(rnorm(n = 20, mean = 10, sd = 3))
 x <- c(x, 25, 30)
 hist(x, breaks = 1:30 + 0.5, xaxt = "n", col = "#fffec5")
-axis(1, at = 1:30)
+axis(1, at = 1:30,gap.axis=0)
 abline(v = mean(x), col = "red", lty = 2, lwd = 2)
 abline(v = median(x), col = "green", lty = 2, lwd = 3)
 
